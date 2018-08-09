@@ -1,16 +1,17 @@
-class Team
+class Hero 
 
-  attr_accessor :name, :motto
+  attr_accessor :name, :power, :bio
 
-  @@all = []
-
+  @@all =[]
+  
   def initialize(arg)
     @name = arg[:name]
-    @motto = arg[:motto]
-    @@all << self
+    @power= arg[:power]
+    @bio=arg[:bio]
+    @@all<<self
   end
 
-  def self.all
+  def self.all 
     @@all
   end
 end
